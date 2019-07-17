@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tv = (TextView) findViewById(R.id.textView);
-        chb = (CheckBox) findViewById(R.id.chbExtMenu)
+        chb = (CheckBox) findViewById(R.id.chbExtMenu);
     }
 
     @Override
@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         menu.add(0, 3, 0, "delete");
         menu.add(1, 4, 0, "copy");
         menu.add(1, 5, 0, "paste");
-        menu.add(1, 6, 0, "exit");
+        menu.add(1, 6, 0, "build");
+        menu.add(1, 7, 0, "run");
+        menu.add(1, 8, 0, "exit");
 
         return super.onCreateOptionsMenu(menu);
     }
