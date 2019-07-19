@@ -22,21 +22,22 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, 1, 0, "add");
-        menu.add(0, 2, 0, "edit");
-        menu.add(0, 3, 0, "delete");
-        menu.add(1, 4, 0, "copy");
-        menu.add(1, 5, 0, "paste");
-        menu.add(1, 6, 0, "build");
-        menu.add(1, 7, 0, "run");
-        menu.add(1, 8, 0, "exit");
-
+//        menu.add(0, 1, 0, "add");
+//        menu.add(0, 2, 0, "edit");
+//        menu.add(0, 3, 0, "delete");
+//        menu.add(1, 4, 0, "copy");
+//        menu.add(1, 5, 0, "paste");
+//        menu.add(1, 6, 0, "build");
+//        menu.add(1, 7, 0, "run");
+//        menu.add(1, 8, 0, "exit");
+        getMenuInflater().inflate(R.menu.mymenu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        menu.setGroupVisible(1, chb.isChecked());
+//        menu.setGroupVisible(1, chb.isChecked());
+        menu.setGroupVisible(R.id.group1, chb.isChecked());
         return super.onPrepareOptionsMenu(menu);
     }
 
